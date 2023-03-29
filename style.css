@@ -49,7 +49,7 @@
 
 /*--------banner start ---------*/
 .banner{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/image/011.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/002.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -408,7 +408,7 @@ laptop responsive Start
         background-color: #191919;
     }
     .banner{
-        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/011.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/002.jpg);
         height: 100vh;
         
         background-size: cover;
