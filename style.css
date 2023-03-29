@@ -1,0 +1,862 @@
+*{
+    margin:0;
+    padding: 0%;
+    font-family: 'Raleway', sans-serif;}
+
+/*--------Navbar start ---------*/
+.container{
+  background-color: #f44;
+  padding: 1% 3%;
+}
+.navbar img{
+    width: 150px;
+    border: 2px solid #fff;
+    border-radius: 50%;  
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1%;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: aqua;
+    position: absolute;
+    right: 0;
+    left: 6px;
+    top: 25px;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 90%;
+}
+/*--------Navbar end ---------*/
+
+/*--------banner start ---------*/
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/image/011.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner-text{
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner-text h1{
+    font-size: 55px;
+    color: #fff;
+}
+.banner-text p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 0;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background-color: #009688;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.8s;
+}
+button:hover span{
+    width: 100%;
+}
+/*--------banner end ---------*/
+
+/*--------about start ---------*/
+.about{
+    width: 90%;
+    margin: 5%;
+    border-radius: 10px;
+    padding: 38px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 420px;
+    transition: 1s;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-text h1{
+    color: #fff;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.about-text h5{
+    color: #fff;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.about button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.about button:hover{
+    background-color:#009688;
+}
+.about img:hover{
+    transform: translateY(-8px);
+}
+/*--------about end ---------*/
+
+/*--------card start ---------*/
+.card-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+hr{
+    background-color: #f44;
+    width: 18%;
+    height: 2px;
+    border: 2px solid #f44;
+    border-radius: 20px;
+    margin-left: 41%;
+    margin-bottom: 60px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 4%;
+    padding: 6%;
+}
+.grid-item{
+    background-color: aqua;
+    box-shadow: 2px 3px 5px black;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+}
+.card img{
+    width: 100%;
+    height: 30%;
+}
+.card-text{
+    padding: 7%;
+}
+.card-text h1{
+    font-size: 30px;
+    padding: 1%;
+}
+.card-text p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.card button{
+    width: 320px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card button:hover{
+    background-color: #009688;
+}
+.grid-item:hover{
+    transform: translateY(-8px);
+}
+/*--------card end ---------*/
+
+/*--------Location start ---------*/
+.location-text{
+    text-align: center;
+}
+.area{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/image/300px-Map_of_Chittagong_Division.png);
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.location{
+    background-color: #fff;
+    box-shadow: 2px 3px 5px black;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+}
+.city{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2%;
+    padding: 6%;
+}
+.city-text{
+    text-align: center;
+}
+.location img{
+    width: 60%;
+    height: 50%;
+    margin-left: 60px;
+}
+.location button{
+    width: 300px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 15px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    background: transparent;
+    color:#191919;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.location button:hover{
+    background-color: #009688;
+    color: #191919;
+}
+.location:hover{
+    transform: translateY(-8px);
+}
+/*--------Location end ---------*/
+
+
+/*--------Review start ---------*/
+.review-text{
+    text-align: center;
+    margin-top: 60px;
+}
+.customer{
+    background-color: #fff;
+    box-shadow: 2px 3px 5px black;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    transition: 1s;
+
+}
+.customer:hover{
+    transform: translateY(-8px);
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2%;
+    padding: 6%;
+}
+.customer img{
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+.customer-text{
+    text-align: center;
+}
+.customer-text h1{
+     padding: 10px;
+}
+.customer-text p{
+     padding-bottom: 40px;
+}
+.ratting{
+    padding: 20px;
+    color: red;
+}
+/*--------Review end ---------*/
+/*--------footer start ---------*/
+.footer{
+    background-color: #191919;
+}
+.footer-text{
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    padding-top: 30px;
+}
+.footer-text h1{
+    font-size: 39px;
+    padding-bottom: 40px;
+}
+.footer-text p{
+    font-size: 19px;
+}
+.footer-icon{
+    padding: 25px 0px;
+}
+.fa-facebook-f{
+    background-color: #f44;
+    padding: 10px 17px;
+    font-size: 30px;
+    color: #fff;
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+.fa-twitter{
+    background-color: #f44;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+.fa-instagram{
+    background-color: #f44;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+.copy-right{
+    background-color: red;
+    font-weight: 500;
+}
+/*--------footer end ---------*/
+
+
+/*--------Media quarry start ---------*/
+
+
+/*---------------------
+laptop responsive Start 
+----------------------*/
+@media screen and (max-width:992px){
+    .container{
+        background-color: #f44;
+        
+      }
+    
+    .nav-links ul li:hover::after{
+        width: 0%;
+    }
+    .nav-links ul li:hover{
+        background-color: #191919;
+    }
+    .banner{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/image/011.jpg);
+        height: 100vh;
+        
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .banner-text h1{
+        font-size: 35px;
+        color: #fff;
+    }
+    .banner-text p{
+        font-size: 15px;
+        color: #fff;
+        font-weight: 600;
+        width: 100%;
+        padding: 15px 0;
+    }
+    .about img{
+        width: 350px;
+        transition: 1s;
+        text-align: center;
+    }
+    .about{
+        align-items: center;
+        background-color: #191919;
+        
+    }
+    
+    .about-text{
+        width: 70%;
+        margin-left: 0px;
+    }
+    .about-text h1{
+        color: #fff;
+        font-size: 40px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    .about-text h5{
+        color: #fff;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 18px;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    .card-title{
+        margin-right: 13%;
+        margin-bottom: 8px;
+    }
+    hr{
+        background-color: #f44;
+        width: 40%;
+        height: 2px;
+        border: 2px solid #f44;
+        border-radius: 20px;
+        margin-left: 23%;
+        margin-bottom: 50px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 4%;     
+    }
+    .card-text h1{
+        font-size: 25px;
+    }
+    .card button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 0px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .location-text{
+        margin-right: 13%;
+    }
+    .city{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 2%;
+       
+    }
+    .location img{
+        width: 60%;
+        height: 40%;
+        margin-left: 60px;
+    }
+    .location button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 15px 0px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: 2px solid black;
+        background: transparent;
+        color:#191919;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .review-text{
+        margin-right: 13%;
+        margin-top: 50px;
+    }
+    .customer-text h1{
+        padding: 10px;
+        font-size: 20px;
+   }
+
+
+}
+/*--------------------
+laptop responsive end
+---------------------*/
+
+/*--------------------
+Tablet responsive start
+---------------------*/
+@media screen and (max-width:768px){
+    .container{
+        background-color: #f44;
+        
+      }
+    .navbar{
+        display: block;
+        text-align: center;
+        
+    }
+    .nav-links ul li{
+        display: block;
+        background-color: #009688;
+        padding: 8px 0px;
+        margin: 20px 0px;
+        border-radius: 25px;
+        margin-left: 20px;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 0%;
+    }
+    .nav-links ul li:hover{
+        background-color: #191919;
+    }
+    .banner{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/image/011.jpg);
+        height: 100vh;
+        
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .banner-text h1{
+        font-size: 35px;
+        color: #fff;
+    }
+    .banner-text p{
+        font-size: 15px;
+        color: #fff;
+        font-weight: 600;
+        width: 100%;
+        padding: 15px 0;
+    }
+    .about img{
+        width: 350px;
+        transition: 1s;
+        text-align: center;
+    }
+    .about{
+        align-items: center;
+        background-color: #191919;
+        
+    }
+    
+    .about-text{
+        width: 70%;
+        margin-left: 0px;
+    }
+    .about-text h1{
+        color: #fff;
+        font-size: 40px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    .about-text h5{
+        color: #fff;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 18px;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    .card-title{
+        margin-right: 13%;
+        margin-bottom: 8px;
+    }
+    hr{
+        background-color: #f44;
+        width: 40%;
+        height: 2px;
+        border: 2px solid #f44;
+        border-radius: 20px;
+        margin-left: 23%;
+        margin-bottom: 50px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 3%;
+       
+        
+    }
+    .card button{
+        width: 250px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 0px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .location-text{
+        margin-right: 13%;
+    }
+    .city{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2%;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2%;
+       
+    }
+    .location button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 15px 0px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: 2px solid black;
+        background: transparent;
+        color:#191919;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .review-text{
+        margin-right: 13%;
+        margin-top: 60px;
+    }
+
+}
+/*-------------------
+Tablet responsive end 
+---------------------*/
+
+
+/*---------------------
+Mobile responsive Start 
+----------------------*/
+
+
+@media screen and (max-width:576px){
+    .container{
+        background-color: #f44;
+      }
+    .navbar{
+        display: block;
+        text-align: center;
+        
+    }
+    .nav-links ul li{
+        display: block;
+        background-color: #009688;
+        padding: 8px 0px;
+        margin: 20px 0px;
+        border-radius: 25px;
+        margin-left: 20px;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 0%;
+    }
+    .nav-links ul li:hover{
+        background-color: #191919;
+    }
+    .banner{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/image/011.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .banner-text h1{
+        font-size: 35px;
+        color: #fff;
+    }
+    .banner-text p{
+        font-size: 15px;
+        color: #fff;
+        font-weight: 600;
+        width: 100%;
+        padding: 15px 0;
+    }
+    .main{
+        display: block;
+        
+
+    }
+    .about img{
+        width: 350px;
+        margin-right: 20%;
+        transition: 1s;
+        text-align: center;
+    }
+    .about{
+        align-items: center;
+        background-color: #191919;
+    }
+    .about-text{
+        width: 95%;
+        margin-left: 20px;
+    }
+    .about-text h1{
+        color: #fff;
+        font-size: 40px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    .about-text h5{
+        color: #fff;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 18px;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    .card-title{
+        margin-right: 13%;
+        margin-bottom: 8px;
+    }
+    hr{
+        background-color: #f44;
+        width: 40%;
+        height: 2px;
+        border: 2px solid #f44;
+        border-radius: 20px;
+        margin-left: 23%;
+        margin-bottom: 50px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1%;
+        
+    }
+    .card button{
+        width: 250px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 0px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .location-text{
+        margin-right: 13%;
+    }
+    .city{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 2%;
+        padding: 6%;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 2%;
+        padding: 6%;
+       
+    }
+    .location button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 15px 0px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: 2px solid black;
+        background: transparent;
+        color:#191919;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .review-text{
+        margin-right: 13%;
+        margin-top: 60px;
+    }
+
+}
+/*-------------------
+Mobile responsive end 
+---------------------*/
+
+/*--------Media quarry end ---------*/
+
+
+
+
+
+
+
+
