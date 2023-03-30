@@ -338,6 +338,58 @@ hr{
     color: red;
 }
 /*--------Review end ---------*/
+/*--------Register start ---------*/
+.menu{
+    background-color: #009688;
+    margin:5%;
+    border-radius: 10px;
+}
+.from-div{
+    display: flex;
+    justify-content: space-around;
+}
+.from-img{
+    transition: 1s;
+}
+.from-img:hover{
+    transform: translateY(-10px);
+}
+form{
+    background-color: #f44;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}
+form h2{
+   color: black;
+   padding: 10px;
+   background-color: #fff;
+   border-radius: 10px;
+   text-align: center;
+}
+form input{
+    width: 240px;
+    height: 35px;
+    margin-top: 22px;
+    font-size: 15px;
+    background: transparent;
+    border:1px solid orange;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    letter-spacing: 1px;
+    color: #fff;
+}
+form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+}
+/*--------Register end ---------*/
+
 /*--------footer start ---------*/
 .footer{
     background-color: #191919;
@@ -387,8 +439,6 @@ hr{
     font-weight: 500;
 }
 /*--------footer end ---------*/
-
-
 /*--------Media quarry start ---------*/
 
 
@@ -534,6 +584,16 @@ laptop responsive Start
         padding: 10px;
         font-size: 20px;
    }
+   .from-img{
+    width: 55%;
+    height: 65%;
+    margin-top: 50px;
+}
+form{
+    margin-left: 5px;
+    width: 77%;
+    margin-bottom: 25px;
+}
 
 
 }
@@ -570,7 +630,7 @@ Tablet responsive start
         background-color: #191919;
     }
     .banner{
-        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/image/011.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/011.jpg);
         height: 100vh;
         
         background-size: cover;
@@ -687,6 +747,17 @@ Tablet responsive start
         margin-right: 13%;
         margin-top: 60px;
     }
+    .from-img{
+        width: 55%;
+        height: 65%;
+        margin-left: 5px;
+        margin-top: 70px;
+    }
+    form{
+        margin-left: 15px;
+        width: 72%;
+        margin-bottom: 25px;
+    }
 
 }
 /*-------------------
@@ -724,7 +795,7 @@ Mobile responsive Start
         background-color: #191919;
     }
     .banner{
-        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/image/011.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/011.jpg);
         height: 100vh;
         background-size: cover;
         background-position: center;
@@ -844,7 +915,24 @@ Mobile responsive Start
     .review-text{
         margin-right: 13%;
         margin-top: 60px;
+    } 
+    
+    .from-div{
+        display: block;
     }
+    .from-img{
+        width: 95%;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+    form{
+        margin-left: 15px;
+        width: 78%;
+    }
+    .menu{
+        padding-bottom: 30px;
+    }
+    
 
 }
 /*-------------------
